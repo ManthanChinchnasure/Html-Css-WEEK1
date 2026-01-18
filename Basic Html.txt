@@ -1,0 +1,609 @@
+HTML
+ Here i am  follwinng the doc is W3SCHOOLS the link is below 
+ https://www.w3schools.in/html#google_vignette
+
+some  tag to know is wriiten Here
+
+1 comments tag 
+  <!-- This is a commented code -->
+
+2 Favicon
+his can be a simple image, such as a logo or initial, or
+ it can be a more complex design. The image should be square and saved as a .ico file. 
+<link rel="icon" href="/favicon.ico">
+
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+<link rel="icon" href="/favicon.png" type="image/png">
+
+
+3 HTML DOCUMENTS
+ all html start form  <! DOCTYPE httml>
+
+4 HTML tag
+it  written as <html> ... </html>  
+  <>  Tags with opening and closing tags are called container tags,
+   / forward slash
+ it case insensitive  where lowercase and upper case treat same.
+
+ 5 Head tag 
+
+ <head> <title> It is used to give various additional information about the
+  web page along with description and title to your page </title> 
+  </head>
+
+  6 BODY Tags
+  <body>  where  All formatting and writing of content are done
+   in this section within the opening and closing  </body>
+
+
+   difference between teg and element
+   HTML element consists of a starting tag always. When the HTML element holds 
+   sub-content or some other content within it, it will end up with an ending tag.
+
+   7 html element
+   <p>	<p>Paragraph elements are used for giving paragraph spacing to statements.</p>
+<h1>	<h1>Heading elements are used to provide a heading to articles on your web page.</h1>
+<br>	<br>Line break is used to provide carriage return or going to the next line.
+
+
+8 formatting tag
+<u>	To make any text underlined.
+<b>	To make any text bold.
+<strong>	It is used in texts that are important and need to be highlighted.
+<i>	To make any text italic.
+<em>	To emphasize any text.
+<mark>	To make any text marked or highlighted.
+<small>	To make the text smaller in size than other regular text.
+<big>	To make the text bigger in size than other regular text.
+<del>	To show the text that has been removed or replaced.
+<ins>	To show the text that has been added.
+<sub>	To give a subscript effect to any text.
+<sup>	To give a superscript effect to any text.
+<strike>	To display any text as a strikethrough.
+<tt>	For displaying any font as a monospaced font. This tag is abbreviated as a typewriter font tag.Let's check this out by using an example program:
+
+code 
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Formatting elements example</title>
+    </head>
+    <body>
+        This makes ur <u> text </u> underlined <br />
+        This is a <b> bold </b> man <br />
+        This is a <strong> Strong </strong> creature <br />
+        I stands for <i> italics </i> <br />
+        This will <em> emphasize </em> your text <br />
+        This will <mark> highlight </mark> your word <br />
+        This is a <small> small </small> island <br />
+        This is a <big> Big </big> river <br />
+        I want red color, not <del> green </del> <br />
+        Please insert <ins> THIS </ins> instead of THAT <br />
+        H<sub> 2 </sub> O <br />
+        x <sup> 3 </sup> <br />
+        I want red color, not <strike> green </strike> <br />
+        This is a <tt> different </tt> font
+    </body>
+
+</html> 
+ 
+ 9  Heading tag
+ <h1>Main Heading</h1>
+<h2>Subheading</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>
+<h6>Heading Level 6</h6>
+
+10  Anchor tag
+The Anchor tag in HTML can be defined as a means to create a hyperlink
+ that can link your current page on which the text is being converted to hypertext via <a> (anchor tag) to another page.
+ This anchoring from one page to another is made possible by the attribute "href",
+
+ The attribute 'href' of the Anchor tag is implemented for defining the address or path to which this hypertext will get linked
+ <!DOCTYPE html>
+<html>
+
+    <body>
+        <a href="https://www.w3schools.in/">
+            <img alt="w3schools logo" src="/w3schools-logo.png" width="170" height="57">
+        </a>
+    </body>
+
+</html>
+
+
+ 11 img tag
+ <img src="path or URL" alt="alternate text or image replacement text.">
+
+ src This attribute helps specify the image's source, which instructs your web browser from which location it must fetch the particular picture 
+ (in other words, specify the path). SRC attribute takes path or URL as its value in quotes.
+
+ alt where it describe the information about image when the image not loading.
+ broder
+ <img src="guitar.jpg" height="30px" width="30px" border="6">
+
+ 12 html listing tag
+ <ol>	HTML <ol> tag is abbreviated as an Ordered List, which is used for numbering the lists on a web page.
+<ul>	HTML UL tag is abbreviated as an Unordered List, used to list your items via bullets and circles.
+<dl>	HTML dl tag is abbreviated as a Definition List, which is used to arrange your data items like how items remain placed in any dictionar
+
+code 
+The start attribute of <ol> is used for providing the starting point or value of your list.
+
+
+<ol type="I" start="3">
+
+<ol type="i" start="4">
+    <li> Four </li>
+    <li> Five </li>
+    <li> Six </li>
+</ol>
+<ol type="I" start="1">
+    <li> Alex </li>
+    <li> Deeksha </li>
+    <li> Ray </li>
+    <li> Neha </li>
+</ol>
+<ol type="A" start="1">
+    <li> Alex </li>
+    <li> Deeksha </li>
+    <li> Ray </li>
+    <li> Neha </li>
+</ol>
+<ol type="a" start="1">
+    <li> Alex </li>
+    <li> Deeksha </li>
+    <li> Ray </li>
+    <li> Neha </li>
+</ol>
+<ol type="1" start="1">
+    <li> Alex </li>
+    <li> Deeksha </li>
+    <li> Ray </li>
+    <li> Neha </li>
+</ol>
+
+
+
+ unorder 
+<ul type="square">
+    <li> A </li>
+    <li> B </li>
+    <li> C </li>
+</ul>
+<ul type="disc">
+    <li> Alex </li>
+    <li> Deeksha </li>
+    <li> Ray </li>
+</ul>
+<ul type="circle">
+    <li> Alex </li>
+    <li> Deeksha </li>
+    <li> Ray </li>
+</ul>
+
+
+ defination listing
+ In this type of data listing, the data are arranged or listed like a dictionary or encyclopedia. It is used on the last page of your site to provide the glossary or place a set of definitions. It takes the help of two more tags called: <dt> - a definition terminology and <dd> - definition description.
+
+
+<dl>
+    <dt> Alex </dt>
+    <dd> Class X </dd>
+    <dt> Deeksha </dt>
+    <dd> Class IX </dd>
+</dl>
+
+13 table tag
+ The table comprises three main tags: <table>, <tr>, and <td>. 
+ The <table> tag defines the table,
+  the <tr> tag defines the table rows, 
+   the <td> tag defines the table cells.
+
+Here's an example of a basic HTML table:
+
+
+<table>
+    <tr>
+        <td>Column1 in Row1</td>
+        <td>Column2 in Row1</td>
+    </tr>
+    <tr>
+        <td>Column1 in Row2</td>
+        <td>Column2 in Row2</td>
+    </tr>
+</table>
+
+heading tag of table
+The <th> tag is used within the <table> tag for defining the heading for your table data.
+ It is used as a replacement for the <td> tag, where the table's data must be inserted as a heading.
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ These two attributes of the <td> tag are used for merging two or more columns into a single column. 
+ It is useful in cases where you want to show mixed data universally for all the headings.
+
+colspan
+<table border="1">
+    <tr>
+        <th>Column1 Heading</th>
+        <th>Column2 Heading</th>
+    </tr>
+    <tr>
+        <td>Column1 in Row1</td>
+        <td>Column2 in Row1</td>
+    </tr>
+    <tr>
+        <td colspan="2">Column1 in Row2</td>
+    </tr>
+</table>
+
+  rowspa
+<table border="1">
+    <tr>
+        <th>Column1 Heading</th>
+        <th>Column2 Heading</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Column1 in Row1</td>
+        <td>Column2 in Row1</td>
+    </tr>
+    <tr>
+        <td>Column2 in Row2</td>
+    </tr>
+</table>
+
+cell-padding and cell-spaceing attribute 
+These two attributes of the <table> tag provides white spaces to your table cells from both sides.
+ This is mainly done to beautify and make data within your cells readable. This is how you have to provide value to these attributes:
+
+<table border="2" cellpadding="6" cellspacing="6">
+
+table background and colour
+<table border="1" bordercolor="aqua" bgcolor="red">
+
+
+nesting codeing
+<table border="2" cellpadding="2" cellspacing="2">
+    <tr>
+        <td>A</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>
+            <table border="2" cellpadding="2" cellspacing="2">
+                <tr>
+                    <td>
+                        <table border="2" cellpadding="2" cellspacing="2">
+                            <tr>
+                                <td>D</td>
+                                <td>E</td>
+                            </tr>
+                            <tr>
+                                <td>F</td>
+                                <td>G</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>H</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>J</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+14 div tag
+the HTML <div> tag helps users create different data blocks to represent different contexts,
+<div> </div>
+
+<div class="card-body">
+    <h2>This is a title inside the div element</h2>
+    <ol>
+        <li>Identifiers</li>
+        <li>Keywords</li>
+        <li>Constants</li>
+        <li>Strings</li>
+        <li>Operators</li>
+        <li>Special Symbols</li>
+    </ol>
+</div>
+<p>The above example displays some sample content inside a div element.</p>
+
+15. phrase tag         when use it go at google .
+Emphasis Tag 
+ Emphasis Tag emphasizes or stresses the texts within its opening and closing tags.
+This is a <em>beautiful</em> langua
+
+Marked Tag  
+The mark tag defines text with a highlighted yellow background that should be marked or highlighted.
+
+Strong Tag
+The mark tag defines the appearance of the text as solid or bold, which should be more significant.
+
+Abbreviation Tag
+Do you know the nickname of <abbr title = "Rowan Atkinson">Mr. Bean</abbr>?
+Do you know the nickname of Mr. Bean?
+                            ........
+
+Acronym Tag
+Special Terminology / Definition Tag
+Quotation Tag
+Short Quote Tag
+Code Tag
+Keyboard Tag
+Address Tag
+
+16 <button>
+The HTML <button> tag in the webpage represents a clickable button. It can be used to submit forms, trigger events, or perform other actions.
+type: This attribute specifies the type of button. It can be set to "submit" to submit a form, "reset" to reset a form, or "button" to perform some other action.
+name: This attribute specifies a name for the button, which can be used to identify it in the form data when the form is submitted.
+value: This attribute specifies a value for the button, which will be sent to the server when the form is submitted.
+disabled: This attribute disables the button, making it unclickable.
+onclick: This attribute specifies a JavaScript function to be executed when clicking the button.
+form: This attribute specifies the form that the button belongs to.
+formaction: This attribute specifies the URL of the file that will process the form data when the button is clicked.
+formenctype: This attribute specifies the type of encoding to use when sending form data to the server.
+formmethod: This attribute specifies the HTTP method to use when sending form data to the server.
+formnovalidate: This attribute specifies that the form data should not be validated when clicking the button.
+formtarget: This attribute specifies whe
+
+
+17 mailto link
+he simplest form of a mailto link opens the user's email client with a specified recipient. Here is an example:
+
+<a href="mailto:someone@example.com">Send Email</a>
+
+18 <video tag>
+src: This is used to set the URL or path from where the video file will get fetched.
+autoplay: This attribute specifies that as soon as your web page gets ready, the video embedded in your page gets played at that moment.
+controls: This tells the browser what player-controls / buttons (such as play/pause, etc.) to be displayed on the page with the video.
+width and height: This is used to assign the player's width and height in which the video will be shown.
+muted: This tells whether the audio part of the specified video should be kept mute or not.
+
+code
+
+<video width="320" height="240" controls autoplay muted>
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.ogg" type="video/ogg">
+</video>
+
+19 <abbr tag> 
+The <abbr title="Indian Premier League">IPL</abbr> was started in 2008.
+
+The IPL was started in 2008.
+
+20 marquee tag
+The <marquee> tag is a container tag of HTML that is implemented for creating scrollable text or
+ images within a web page from either left to right or vice versa, or top to bottom or vice versa
+
+ The different attributes of <marquee> tag are:
+
+Attribute	Description
+width        	provides the width or breadth of a marquee. For example width="10" or width="20%"
+height	         provides the height or length of a marquee. For example height="20" or height="30%"
+direction	    provides the direction or way in which your marquee will allow you to scroll. The value of this attribute can be: left, right, up, or down
+scrolldelay  	provides a feature whose value will be used for delaying each jump.
+scrollamount	provides value for speeding the marquee feature
+behavior	   provides the scrolling type in a marquee. That scrolling can be like sliding, scrolling, or alternate
+loop	       provides how many times the marquee will loop
+bgcolor     	provides a background color where the value will be either the name of the color or the hexadecimal color code.
+vspace    	provides a vertical space, and its value can be like vspace="20" or vspace="30%"
+hspace      	provides a horizontal space, and its value can be like hspace="20" or hspace="30%"
+
+scroll up 
+<marquee width="60%" direction="up" height="100px">
+This is a sample scrolling text that has scrolls in the upper direction.
+</marquee>
+
+ scroll down
+<marquee width="60%" direction="down" height="100px">
+This is a sample scrolling text that has scrolls texts to down.
+</marquee>
+
+ scroll left to right
+<marquee width="60%" direction="right" height="100px">
+This is a sample scrolling text that has scrolls texts to the right.
+</marquee>
+ 
+ scroll right to left 
+
+ scrolling speed
+ Marquee speed can be changed using the "scrollmount" attribute.
+  For example, if you are using scrollmount="1", then it sets the marque to scroll very slowly, 
+  and as you increase the "scrollmount," the scrolling speed will also increase.
+
+
+<marquee behavior="scroll" direction="up" scrollamount="1">Slow Scrolling</marquee>
+<marquee behavior="scroll" direction="right" scrollamount="12">Little Fast Scrolling</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="20">Fast Scrolling</marquee>
+<marquee behavior="scroll" direction="right" scrollamount="50">Very Fast Scrolling</marquee>
+
+blink text with the marquee 
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Example of a blinking text using CSS within a marquee</title>
+        <style>
+            .blink {
+                animation: blinker 1.5s linear infinite;
+                color: red;
+                font-family: sans-serif;
+            }
+
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <marquee class="blink">This is an example of blinking text using CSS within a marquee.</marquee>
+    </body>
+
+</html>
+
+21 blink tag
+<blink> Here is your text that has to blink. </blink>
+
+22 font 
+<font>This is an Sample text.</font>
+size
+color
+face
+
+
+code 
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Font size Example</title>
+    </head>
+
+    <body>
+        <font size="7">Here font size is 7 which is highest</font> <br>
+        <font size="6">Here font size is 6</font> <br>
+        <font size="5">Here font size is 5</font> <br>
+        <font size="4">Here font size is 4</font> <br>
+        <font size="3">Here font size is 3</font> <br>
+        <font size="2">Here font size is 2</font> <br>
+        <font size="1">Here font size is 1 which is lowest</font> <br>
+    </body>
+
+</html>
+
+code 
+<body>
+    <h1>Font Style Example</h1>
+    <p><font face="Arial" size="5">Font style Example 1 (Arial).</font></p>
+    <p><font face="Verdana" size="5">Font style Example 2 (Verdana).</font></p>
+    <p><font face="Times New Roman" size="5">Font style Example 3 (Times New Roman).</font></p>
+    <p><font face="Courier New" size="5">Font style Example 4 (Courier New).</font></p>
+    <p><font face="Tahoma" size="5">Font style Example 5 (Tahoma).</font></p>
+    <p><font face="Georgia" size="5">Font style Example 6 (Georgia).</font></p>
+    <p><font face="Trebuchet MS" size="5">Font style Example 7 (Trebuchet MS).</font></p>
+    <p><font face="Impact" size="5">Font style Example 8 (Impact).</font></p>
+    <p><font face="Monospace" size="5">Font style Example 9 (Monospace).</font></p>
+    <p><font face="Lucida Handwriting" size="5">Font style Example 10 (Lucida Handwriting).</font></p>
+    <p><font face="Comic Sans MS" size="5">Font style Example 13 (Comic Sans MS).</font></p>
+</body>
+
+code 
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <font color="#0000FF"> Color change using Hex value </font><br>
+        <font color="aqua"> Color change using color name </font>
+    </body>
+
+</html>
+
+attribute tag
+An attribute is a property name used to provide supplementary information about HTML elements.
+ Some common examples of HTML attributes are id, class, align, etc. Many attributes are defined globally and are applied to any element,
+  whereas we use some of them only for specific HTML elements. The syntax is:
+
+<element_name attribute_name="value"> .... </element_name>
+
+
+id
+title
+class
+style
+
+id attribute
+The id attribute can be applied to assign a unique identity to any element.
+ There can be two primary reasons for using the id attribute on an HTML element.
+  The id attribute provides a unique identifier, which ultimately makes it possible to identify the element.
+   When you have two elements of the same name within the same script, the id attribute helps to distinguish two similar elements through the unique ID.
+
+<p id="para1"> Paragraph 1 in your HTML document.</p>
+
+<p id="para2"> Paragraph 2 in your HTML document.</p>
+
+
+title attribute
+This attribute gives a recommended title for your element.
+ Its behavior depends on the element upon which it's implemented,
+  even though this is often implemented to display a tooltip if the cursor hovers (comes over) the element.
+
+<h3 title="Welcome to my Journal">Please visit</h3>
+
+class Attribut
+eThis attribute is implemented by combining an element through a stylesheet (CSS) and identifying its class element.
+ For more about the class attribute, you can follow the Cascading Style Sheet (CSS).
+
+Here's an example of a class attribute:
+<p class="classname1 classname2">This is a sample paragraph text.</p>
+
+style attribute
+
+This attribute gives you a chance for specifying the rules for Cascading Style Sheet (CSS) in your element.
+
+
+<p style="font-family:arial;">An example of style attribute.</p>
+Some other popular HTML attributes are:
+
+Attribute	Usage
+align	It is used to align HTML tags horizontally, left, right, or center.
+background	It is used to set a background image behind an HTML element
+accesskey	It is used to add a specific keyboard shortcut to access an HTML element.
+contextmenu	It is used to specify the context menu of an HTML element.
+item	It is used to group HTML elements.
+hidden	It is used to specify whether your HTML element should be visible or not.
+
+how to add css html
+inline css
+Inline CSS is the most specific way to add CSS to the HTML element.
+ To add inline CSS, include the style attribute in the relevant element and specify any CSS property.
+  This way, you can customize the style of individual elements without affecting the rest of the page's design.
+   For example, the following inline CSS code applies color and padding to a single paragraph element:
+
+<p style="color: red; padding: 5px;">Red text with padding.</p>
+
+internal css in html 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    p {
+        color: green;
+        margin-top: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <p>Green paragraph with top margin.</p>
+</body>
+</html>
+
+external css 
+External CSS is the most efficient method to style multiple pages.
+ To add external CSS, link to a separate CSS file using the HTML <link> element in each HTML page's <head> section.
+  For example, the following code links to an external CSS file named style.css:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Styled Heading</h1>
+</body>
+</html>
