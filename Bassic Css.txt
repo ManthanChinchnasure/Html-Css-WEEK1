@@ -120,3 +120,665 @@ p.outset {border-style: outset;}
 p.none {border-style: none;}
 p.hidden {border-style: hidden;}
 p.mix {border-style: dotted dashed solid double;}
+
+Specific Side Widths
+The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border):
+
+Example
+p.one {
+  border-style: solid;
+  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+}
+
+border colors:
+
+p.one {
+  border-style: solid;
+  border-color: red;
+   
+   also in it specific border colour syntax.
+
+
+ the four properties above to set the style of each border side:
+
+Example
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+
+The border property is a shorthand property for the following individual border properties:
+
+border-width
+border-style (required)
+border-color
+Example
+p {
+  border: 5px solid red;
+}
+
+border
+p {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+CSS Margins
+The CSS margin properties are used to create space around elements, outside of any defined borders.
+
+Margins define the distance between an element's border and the surrounding elements.
+
+With CSS, you have full control over the margins. CSS has properties for setting the margin for each individual side of an element (top, right, bottom, and left), and a shorthand property for setting all the margin properties in one declaration.
+
+Margin - Individual Sides
+CSS has properties for specifying the margin for each side of an element:
+
+margin-top - sets the top margin of an element
+margin-right - sets the right margin of an element
+margin-bottom - sets the bottom margin of an element
+margin-left - sets the left margin of an element
+All the margin properties can have the following values:
+
+auto - the browser calculates the margin
+length - specifies a margin in px, pt, cm, etc.
+% - specifies a margin in % of the width of the containing element
+inherit - specifies that the margin should be inherited from the parent element
+Tip: Negative values are also allowed.
+
+Example
+Set different margins for all four sides of a <p> element:
+
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+shorthand 
+margin: 25px 50px 75px 100px;
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
+Example
+Use the margin shorthand property with four values:
+
+p {
+  margin: 25px 50px 75px 100px;
+}
+
+CSS has properties for specifying the padding for each side of an element:
+
+padding-top - sets the top padding of an element
+padding-right - sets the right padding of an element
+padding-bottom - sets the bottom padding of an element
+padding-left - sets the left padding of an element
+
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+
+CSS height and width Values
+The height and width properties can have the following values:
+
+auto - This is default. The browser calculates the height and width
+length - Defines the height or width in px, cm, em, etc.
+% - Defines the height or width in percent of the containing block
+initial - Sets the height or width to its default value
+inherit - The height or width will be inherited from its parent value
+height and width of a <div> element:
+
+div {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+
+Demonstration of the box model:
+
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+CSS Outline
+An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+Demonstration of the different outline styles:
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+
+Text Color and Background Color
+In this example, we define both the background-color property and the color property:
+
+Example
+body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+CSS Text Alignment and Text Direction
+In this chapter you will learn about the following properties:
+
+text-align
+text-align-last
+vertical-align
+direction
+unicode-bidi
+
+CSS Text Decoration
+The CSS text-decoration property is used to control the appearance of decorative lines on text.
+
+It is a shorthand property for the following individual properties:
+
+text-decoration-line
+text-decoration-color
+text-decoration-style
+text-decoration-thickness
+
+Specify some different fonts for :
+
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+Web Safe Fonts for HTML and CSS
+The following list are the best web safe fonts for HTML and CSS:
+
+Arial (sans-serif)
+Verdana (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+Courier New (monospace)
+Brush Script MT (cursive)
+
+Commonly Used Font Fallbacks
+Below are some commonly used font fallbacks, organized by the 5 generic font families:
+
+Serif
+Sans-serif
+Monospace
+Cursive
+Fantasy
+
+
+CSS Font Size
+The CSS font-size property is used to specify the size of the text/font.
+
+Being able to manage the text size is very important in web design.
+
+However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs. Always use the proper HTML tags, like <h1> - <h6> for headings and <p> for paragraphs.
+
+The font-size can be set to an absolute size or to a relative size.
+
+Absolute sizes:
+
+px: Pixels offers fixed and precise control over the font size.
+xx-small, x-small, small, medium, large, x-large, xx-large. These keywords has a predefined set of sizes in browsers.
+Relative sizes:
+
+em: This unit is relative to the font size of the parent element.
+rem: This unit is relative to the font size of the root HTML element.
+%: This unit is relative to the font size of the parent element
+smaller and larger: These units adjust the font size relative to the parent element.
+How to Pick the Right Unit?
+For fixed and precise control, px can be used.
+With px, the web page will not scale well on different screen sizes or with user preferences.
+Absolute size can be useful when the physical size of the output is known.
+For scalable web designs, use em or rem; they allow users to adjust text size in their browser settings.
+Percentage (%) can be useful for adjusting font sizes based on parent elements.
+Set Font Size With Pixels
+Setting the text size with pixels (px) gives you full control over the text size.
+
+If you use pixels, the web page may not scale very well on different screen sizes and the users cannot adjust the text size in their browser settings. However, users can still use the zoom tool to resize the entire page.
+
+Example
+Set font sizes with px:
+
+h1 {
+  font-size: 40px;
+}
+
+Set Font Size With Em
+The em unit is relative to the font size of the parent element. So, if the parent element has a font size of 16px, then 2.5em would result in 40px.
+
+In the following example, the text size in em is the same as the previous example in pixels. However, the em unit allows the user to adjust the text size in the browser settings.
+
+Example
+Set font sizes with em:
+
+body {
+  font-size: 16px; /* Base font size */
+}
+
+h1 {
+  font-size: 2.5em; /* 2.5 * 16 = 40px */
+}
+
+h2 {
+  font-size: 1.875em; /* 1.875 * 16 = 30px */
+}
+
+
+
+Set Font Size With Rem
+The rem unit is relative to the font size of the root HTML element (<html>).
+
+Unlike em, which is relative to the font-size of its parent element, rem always refers to the font-size of the <html> element, regardless of its position in the document tree. This makes rem very useful for creating scalable and responsive designs. By changing the font-size of the <html> element, all elements sized with rem units will scale proportionally throughout the entire page.
+
+The default font-size of the <html> element in most browsers, is 16px. So, by default, 1rem equals 16px unless explicitly overridden in the CSS.
+
+Example
+Set font sizes with rem:
+
+html {
+  font-size: 16px; /* Set the root font size */
+}
+
+h1 {
+  font-size: 2.5rem; /* 2.5 * 16 = 40px */
+}
+
+
+The vw Unit
+The font size can also be set with the vw unit, which means the "viewport width".
+
+The vw unit is a relative unit that represents a percentage of the width of the viewport.
+
+1vw = 1% of the current width of the browser's viewport. So, if the viewport is 500px wide, 1vw is 5px.
+
+This way the text size will follow the size of the browser window:
+
+h1 {
+  font-size:10vw;
+}
+
+p {
+  font-size:5vw;
+}
+
+
+Font Awesome Icons
+To use the Font Awesome icons, go to fontawesome.com, sign in, and get a code to add in the <head> section of your HTML page:
+
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+Read more about how to get started with Font Awesome in our Font Awesome 5 tutorial.
+
+Note: No downloading or installation is required!
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i>
+<i class="fas fa-file"></i>
+<i class="fas fa-bars"></i>
+
+</body>
+</html>
+
+CSS Styling Links
+HTML links can be styled with many CSS properties, like color, text-decoration, background-color, font-size, font-weight, font-family, etc.).
+
+Example
+Style a link with a color, background-color, and a bold font-weight:
+
+a {
+  color: hotpink;
+  background-color: yellow;
+  font-weight: bold;
+}
+Styling Links Depending on State
+In addition, links can be styled differently depending on what state they are in.
+
+The four link states are:
+
+:link - a normal, unvisited link
+:visited - a link the user has visited
+:hover - a link when the user mouses over it
+:active - a link the moment it is clicked
+
+Common display Values
+The CSS display property has many values. The following table lists the most commonly used:
+
+Value	Description
+inline	Displays an element as an inline element
+block	Displays an element as a block element
+contents	Makes the container disappear, making its child elements children of the element the next level up in the DOM
+flex	Displays an element as a block-level flex container
+grid	Displays an element as a block-level grid container
+inline-block	Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height, width, padding, and margin values
+none	The element is completely hidden from the document flow (does not take up any space).
+
+p.ex1 {display: none;}
+p.ex2 {display: inline;}
+p.ex3 {display: block;}
+p.ex4 {display: inline-block;}
+p.ex5 {display: flex;}
+p.ex6 {display: grid;}
+
+You can also use visibility:hidden; to hide an element.
+
+However, with this property, the element will be hidden, but it will still take up the same space as if it was visible:
+
+Example
+h1.hidden {
+  visibility: hidden;
+}
+
+
+
+The CSS position Property
+The position property specifies the positioning type for an element.
+
+This property can have one of the following values:
+
+static - This is default
+relative
+fixed
+absolute
+sticky
+Elements are then positioned to their final location with the top, bottom, left, and right properties.
+
+CSS position: static
+All HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+An element with position: static; is always positioned according to the normal flow of the page:
+
+This <div> element has position: static;
+Here is the CSS that is used:
+
+Example
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+
+CSS position: relative
+An element with position: relative; is positioned relative to its normal position in the document flow.
+
+Setting the top, right, bottom, and left properties will cause the element to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+This <div> has position: relative, and is skewed 30 px to the right of its normal position
+Here is the CSS that is used:
+
+Example
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+CSS position: fixed
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used set the final location of the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+
+This <div> element has position: fixed;
+Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:
+
+Example
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+
+CSS position: absolute
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (with position other than static).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal document flow, and can overlap other elements.
+
+Here is a simple example:
+
+This <div> element has position: relative;This <div> element has position: absolute;
+Here is the CSS that is used:
+
+Example
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid green;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid red;
+}
+
+SS position: sticky
+An element with position: sticky; toggles between a relative and fixed position, depending on the scroll position.
+
+A sticky element is positioned relative until a certain scroll position is reached - then it "sticks" in that place (like position:fixed).
+
+
+Note: You must specify at least one of the top, right, bottom or left properties, for sticky positioning to work.
+
+In this example, when the sticky element reach the top of the page (top: 0), it sticks to this position:
+
+Example
+div.sticky {
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+The CSS z-index Property
+The z-index property specifies the stack order of positioned elements.
+
+The stack order defines which element should be placed in front or behind other elements.
+
+When elements are positioned, they can overlap other elements.
+
+An element can have a positive or negative stack order (z-index):
+
+This is a headingBecause the image has a z-index of -1, it will be placed behind the text.
+Example
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and
+ flex items (elements that are direct children of display: flex elements)
+
+
+
+ The CSS overflow Property
+The CSS overflow property controls what happens to content that is too big to fit into an area.
+
+It specifies whether to clip the content or to add scrollbars when the content of an element is too big.
+
+The overflow property has the following values:
+
+visible - Default. The overflow is not clipped. The content renders outside the element's box
+hidden - The overflow is clipped, and the rest of the content is hidden
+scroll - Scrollbars are added. User must scroll to see all content
+auto - Similar to scroll, but adds scrollbars only when necessary
+
+iv {
+  width: 200px;
+  height: 65px;
+  background-color: coral;
+  overflow: visible;
+}
+
+CSS overflow-x and overflow-y
+The overflow-x and overflow-y properties specifies whether to change the overflow of content just horizontally or vertically (or both):
+
+overflow-x specifies what to do with the left/right edges of the content.
+overflow-y specifies what to do with the top/bottom edges of the content.
+You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+
+Example
+div {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Add vertical scrollbar */
+}
+
+
+CSS Float
+Pineapple
+
+The float property specifies how an element should float within its container.
+
+It places an element on the left or right side of its container, allowing text and inline elements to wrap around it.
+
+The image inside this <div> is floated to the right.
+
+If you make the screen smaller, you will see that the text wraps around the image.
+img {
+  float: right;
+}
+
+CSS display: inline-block
+The CSS display: inline-block
+The display: inline-block property combines the features of both inline and block elements.
+
+An element with display: inline-block will appear on the same line as other inline or inline-block elements. In addition, you can set the width, height, margin-top, and margin-bottom properties for the element (like block elements).
+
+The following example shows the different behavior of display: inline, display: inline-block and display: block:
+
+Example
+span.a {
+  display: inline; /* the default for span */
+  padding: 5px;
+  border: 2px solid red;
+}
+
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+  border: 2px solid red;
+}
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+  border: 2px solid red;
+}
+
+
+CSS Image Opacity
+The opacity property specifies the opacity/transparency of an element.
+
+The opacity property can take a value from 0.0 - 1.0:
+
+0.0 - The element will be completely transparent
+0.5 - The element will be 50% transparent
+1.0 - Default. The element will be fully opaque
+
+Example
+img {
+  opacity: 0.5;
+}
+
+
+img:hover {
+  opacity: 0.5;
+}
+
+Navigation Bar = List of Links
+A navigation bar needs standard HTML as a base.
+
+A navigation bar is basically a list of links, so using the <ul> and <li> elements makes perfect sense:
+
+Example
+<ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
+
+
+CSS Flex Container Properties
+The flex container element can have the following properties:
+
+display - Must be set to flex or inline-flex
+flex-direction - Sets the display-direction of flex items
+flex-wrap - Specifies whether the flex items should wrap or not
+flex-flow - Shorthand property for flex-direction and flex-wrap
+justify-content - Aligns the flex items when they do not use all available space on the main-axis (horizontally)
+align-items - Aligns the flex items when they do not use all available space on the cross-axis (vertically)
+align-content - Aligns the flex lines when there is extra space in the cross axis and flex items wrap
+
+
+CSS flex-wrap Property
+The flex-wrap property specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line.
+
+This property can have one of the following values:
+
+nowrap (default)
+wrap
+wrap-reverse
+
+
+CSS justify-content Property
+The justify-content property is used to align the flex items when they do not use all available space on the main-axis (horizontally).
+
+This property can have one of the following values:
+
+center
+flex-start (default)
+flex-end
+space-around
+space-between
+space-evenly
+
+CSS align-items Property
+The align-items property is used to align the flex items when they do not use all available space on the cross-axis (vertically).
+
+This property can have one of the following values:
+
+center
+flex-start
+flex-end
+stretch
+baseline
+normal (default)
+In the following examples we use a 200 pixels high container, to better demonstrate the align-items property.
+
+
+
+grid
