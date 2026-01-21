@@ -1,0 +1,44 @@
+body {
+    border-radius: 20px;
+   
+    border: 20px rgb(229, 7, 7);
+
+}
+
+
+.para1{
+    display: flex;
+    justify-content: center;
+}
+#one1{
+
+    border: 20px black;
+  
+   border-radius: 15px solid black;
+}
+
+#one{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+ 
+ #two{
+    padding: 20px;
+      display: flex;
+    justify-content: center;
+ }
+
+ #three{
+    padding: 20px;
+      display: flex;
+    justify-content: center;
+ }
+  
+ .para2{
+    display: flex;
+    
+    justify-content: center;
+    padding: 20px;
+ }
